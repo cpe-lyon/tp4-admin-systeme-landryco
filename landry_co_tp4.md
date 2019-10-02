@@ -147,14 +147,18 @@ Les droits sont dynamiques et s'applique dès leurs modifications. Pour l'exempl
 
 13. __Transcrivez les commandes suivantes de la notation classique à la notation octale ou vice-versa (vouspourrez vous aider de la commandestatpour valider vos réponses)__
 
-```chmod u=rx,g=wx,o=r fic = chmod 534 -r-x--wx-r--
-chmod uo+w,g-rx fic = chmod 706 -rwx-x-rw-```
+```
+chmod u=rx,g=wx,o=r fic = chmod 534 -r-x--wx-r--
+chmod uo+w,g-rx fic = chmod 706 -rwx-x-rw-
+```
 
 14. __Aﬀichez les droits sur le programmepasswd. Que remarquez-vous? En aﬀichant les droits du fichier/etc/passwd, pouvez-vous justifier les permissions sur le programmepasswd?__
 
-```cd /etc 
+```
+cd /etc 
 ls -l passwd    
--rw-r--r-- 1 root root 1801 sept. 30 21:15 /etc/passwd```
+-rw-r--r-- 1 root root 1801 sept. 30 21:15 /etc/passwd
+```
 
 Le fichier est accessible par son propriétaire en lecture / ecriture, et est uniquement lisible pour les autres utilisateurs.
 
